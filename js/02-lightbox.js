@@ -21,7 +21,7 @@ const gallaryImgMarkup = galleryItems.map(({ preview, original, description }) =
 
 gallaryContainer.insertAdjacentHTML('beforeend', gallaryImgMarkup);
 
-new SimpleLightbox(`.gallery__item a`, {
+let gallery = new SimpleLightbox(`.gallery__item a`, {
     captionsData: 'alt',
     captionDelay: 250,
 });
